@@ -1,0 +1,123 @@
+/*Jessica Barnett*/
+
+*{
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+	border: 3px solid #8c1d40;
+	border-radius: 10px;
+	width: 75%;
+	margin: 20px auto;
+	color: #8F99A3;
+}
+
+header{
+	padding: 20px;
+}
+
+img{
+	width: 200px;
+	display: inline;
+}
+
+h1{
+	color: #8c1d40;
+	padding-left: 25px;
+	display: inline;
+	font-size: 3em;
+
+}
+
+table{
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	text-align: left;
+	border-bottom: 3px dashed #8c1d40;
+	border-top: 3px dashed #8c1d40;
+}
+
+#tableHead{
+	text-align: left;
+	width: 100%;
+	color: #8c1d40;
+	font-size: 1.2em;
+}
+
+th, td{
+	padding: 5px;
+}
+
+th{
+	color: #5c6670;
+}
+
+tr{
+	padding-left: 25px;
+}
+
+#nameHeading{
+	width: 20%
+}
+
+.shortCell{
+	width: 5%;
+}
+
+#descriptionHead{
+	width:33%;
+}
+
+h4{
+	padding-bottom: 0px;
+	color: #8c1d40;
+	margin-left: 250px;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+
+
+form{
+	padding-left: 30px;
+	padding-top: 20px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+ form label{
+	float: left;
+	display: inline;
+	text-align: right;
+	width: 13em;
+	padding-right: 1em;
+	padding-top: 5px;
+}
+
+input, select{
+	display: block;
+	width: 35%;
+	height: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ffc627;
+	border-radius: 5px;
+}
+
+textarea{
+	width: 35%;
+	margin-bottom: 20px;
+	display: block;
+	border: 1px solid #ffc627;
+	border-radius: 5px;
+}
+
+#buttons{
+	width: 75%;
+	margin-left: 220px;
+}
+
+#clear, #add{
+	display: inline;
+	width: 25%;
+}

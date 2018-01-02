@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Jessica Barnett -->
+		<title>Class Catalog Maintenance</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="classCatalog.css">
+		<script src="catalog.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<img src="http://www.public.asu.edu/~jlbarn11/scoop/asu-logo.png">
+			<h1>Class Catalog Maintenance</h1>
+		</header>
+		<!-- Table to hold the classes with relevant headings -->
+		<table id="tbl">
+			<thead>
+				<tr>
+					<th id="tableHead" colspan="7">Classes</th>
+				</tr>
+				<tr>
+					<th id="nameHeading">Name</th>
+					<th class="shortCell">Number</th>
+					<th class="shortCell">Start</th>
+					<th class="shortCell">Length</th>
+					<th class="shortCell">Weekday</th>
+					<th class="shortCell">Time</th>
+					<th id="descriptionHead">Description</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+		<h4>Add a Class</h4>
+
+		<!-- Form to collect info about the class from the user -->
+		<form name="classCatalog" id="classCatalog">
+			<label for="className">Class Name: </label>
+			<input type="text" name="className" id="className">
+
+			<label for="classNumber">Class Number: </label>
+			<input type="text" name="classNumber" id="classNumber">
+
+			<label for="startDate">StartDate: (MM-DD-YY)</label>
+			<input type="text" name="startDate" id="startDate">
+
+			<label for="classLength">Class Length (in weeks):</label>
+			<select size="0" name="classLength" id="classLength">
+				<option value=""></option>
+				<option value="7.5">7.5</option>
+				<option value="15">15</option>
+			</select>
+
+			<label for="weekday">Weekday:</label>
+			<select size="0" name="weekday" id="weekday">
+				<option value=""></option>
+				<option value="MWF">MWF</option>
+				<option value="TuTh">TuTh</option>
+				<option value="MW">MW</option>
+				<option value="Tu">Tu</option>
+				<option value="W">W</option>
+			</select>
+			<label for="classTime">Class Time:</label>
+			<select size="0" name="classTime" id="classTime">
+				<option value=""></option>
+				<option value="9:00">9:00</option>
+				<option value="9:40">9:40</option>
+				<option value="10:30">10:30</option>
+				<option value="10:45">10:45</option>
+				<option value="12:55">12:55</option>
+				<option value="1:30">1:30</option>
+				<option value="2:00">2:00</option>
+				<option value="3:00">3:00</option>
+				<option value="3:05">3:05</option>
+				<option value="4:35">4:35</option>
+				<option value="4:50">4:50</option>
+				<option value="6:00">6:00</option>
+			</select>
+
+			<div id="description">
+				<label for="classDesc">Class Description:</label>
+				<textarea name="classDesc" id="classDesc" rows="5" cols="30"></textarea>
+			</div>
+
+			<div id="buttons">
+				<input type="button" id="clear" value="Clear">
+				<input type="button" id="add" value="Add">
+			</div>
+		</form>
+	</body>
+</html>
